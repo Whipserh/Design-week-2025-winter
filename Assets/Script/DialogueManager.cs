@@ -5,17 +5,21 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshProUGUI textBox;
-
+    public GameObject textBox;
     public DialogueSequence testDialogue;
-
     public DialogueSequence currentDialogue;
+
+    private TextMeshProUGUI textComponent;
 
     public float delay;
 
     private bool waiting = false;
-
     private int lineNumber;
+
+    private void Start()
+    {
+        textComponent = textBox.GetComponentInChildren<TextMeshProUGUI>();
+    }
 
     private void Update()
     {
@@ -25,8 +29,8 @@ public class DialogueManager : MonoBehaviour
             if (lineNumber + 1 < currentDialogue.dialogue.Length) lineNumber++;
             else
             {
-                Debug.LogError("Close dialogue box not implemented");
                 lineNumber = 0;
+                textBox.SetActive(false);
                 return;
             }
             StartCoroutine(scrollingDialogue());
@@ -35,18 +39,20 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator scrollingDialogue()
     {
-        textBox.text = currentDialogue.dialogue[lineNumber];
-        
-        textBox.maxVisibleCharacters = 0;
-        int characterCount = textBox.text.Length;
+        textBox.SetActive(true);
 
-        while (textBox.maxVisibleCharacters < characterCount)
+        textComponent.text = currentDialogue.dialogue[lineNumber];
+
+        textComponent.maxVisibleCharacters = 0;
+        int characterCount = textComponent.text.Length;
+
+        while (textComponent.maxVisibleCharacters < characterCount)
         {
-            textBox.maxVisibleCharacters++;
+            textComponent.maxVisibleCharacters++;
             yield return new WaitForSeconds(delay);
         }
 
-        startWait();
+        waiting = true;
         StopCoroutine(scrollingDialogue());
     }
 
@@ -54,23 +60,12 @@ public class DialogueManager : MonoBehaviour
     private void forceDialogue()
     {
         currentDialogue = testDialogue;
-        _startDialogue();
-    }
-
-    private void _startDialogue()
-    {
         StartCoroutine(scrollingDialogue());
     }
 
     public void startDialogue(DialogueSequence DialogueSquence)
     {
         currentDialogue = DialogueSquence;
-        _startDialogue();
-    }
-
-    private void startWait()
-    {
-        
-        waiting = true;
+        StartCoroutine(scrollingDialogue());
     }
 }
