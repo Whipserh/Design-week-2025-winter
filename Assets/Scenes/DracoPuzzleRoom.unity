@@ -598,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 666195771}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: 0.0061085457, w: -0.99998134}
-  m_LocalPosition: {x: -2.982, y: -3.373, z: 0}
+  m_LocalPosition: {x: -3.01, y: -3.22, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -775,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 1237776325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.0025307287, w: 0.99999684}
-  m_LocalPosition: {x: 0.507, y: -1.458, z: 0}
+  m_LocalPosition: {x: -0.44, y: -1.71, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Orion
+  m_text: Draco
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -1.2015266}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -940,7 +940,7 @@ Transform:
   m_GameObject: {fileID: 1335107873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.27, y: 0.7, z: 0}
+  m_LocalPosition: {x: 3.36, y: 0.67, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1030,7 +1030,7 @@ Transform:
   m_GameObject: {fileID: 1508904205}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.0027925079, w: 0.9999961}
-  m_LocalPosition: {x: -2.781, y: 0.69, z: 0}
+  m_LocalPosition: {x: 3.08, y: -1.41, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1176,7 +1176,7 @@ Transform:
   m_GameObject: {fileID: 1563881612}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.4544569, w: 0.89076877}
-  m_LocalPosition: {x: 6.01, y: -2.78, z: 0}
+  m_LocalPosition: {x: 6.29, y: -1.78, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1353,7 +1353,7 @@ Transform:
   m_GameObject: {fileID: 1731796546}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.0008726948, w: 0.99999964}
-  m_LocalPosition: {x: -2.003, y: -0.916, z: 0}
+  m_LocalPosition: {x: -2.46, y: 0.54, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1454,7 +1454,7 @@ GameObject:
   - component: {fileID: 1800428259}
   - component: {fileID: 1800428258}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Work Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1521,7 +1521,7 @@ Transform:
   m_GameObject: {fileID: 1800428257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.18, z: 0}
+  m_LocalPosition: {x: 0.4818, y: -0.1259, z: 0}
   m_LocalScale: {x: 9.479891, y: 8.045795, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1667,7 +1667,7 @@ Transform:
   m_GameObject: {fileID: 2005531073}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.43381637, w: 0.90100133}
-  m_LocalPosition: {x: -6.4, y: -3.07, z: 0}
+  m_LocalPosition: {x: -6.49, y: -2.18, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1781,7 +1781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &2108356605
 SpriteRenderer:
   m_ObjectHideFlags: 0

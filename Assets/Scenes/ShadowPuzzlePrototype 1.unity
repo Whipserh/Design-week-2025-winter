@@ -497,7 +497,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.58, y: 8.81}
+    oldSize: {x: 4.76, y: 8.9}
     newSize: {x: 4.76, y: 8.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -674,7 +674,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.94, y: 2.99}
+    oldSize: {x: 5.78, y: 3.43}
     newSize: {x: 5.78, y: 3.43}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Orion
+  m_text: Draco
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -1.2015266}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1106,7 +1106,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.35, y: 4.23}
+    oldSize: {x: 4.27, y: 7.4}
     newSize: {x: 4.27, y: 7.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1252,7 +1252,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.36, y: 7.55}
+    oldSize: {x: 3.58, y: 3.88}
     newSize: {x: 3.58, y: 3.88}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1521,7 +1521,7 @@ Transform:
   m_GameObject: {fileID: 1800428257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.18, z: 0}
+  m_LocalPosition: {x: 0.4818, y: -0.1259, z: 0}
   m_LocalScale: {x: 9.479891, y: 8.045795, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1597,7 +1597,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 2.52}
+    oldSize: {x: 1.92, y: 1.83}
     newSize: {x: 1.92, y: 1.83}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
