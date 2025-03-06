@@ -46,6 +46,7 @@ public class CirclePuzzleManager : MonoBehaviour
 
         int k = checkValidSolution();
         //did we find a solution?
+        Debug.Log(k);
         if (k!=-1)//yes
         {
             doors[k].SetActive(true);//set the index to be true
@@ -68,10 +69,10 @@ public class CirclePuzzleManager : MonoBehaviour
             {
                 
                 //in degrees
-                float ringAngle = Mathf.Atan2(rings[j].transform.right.y, rings[j].transform.forward.x) * Mathf.Rad2Deg;
-
+                float ringAngle = Mathf.Atan2(rings[j].transform.right.y, rings[j].transform.right.x) * Mathf.Rad2Deg;
+                //Debug.Log(rings);
                 //if part of the solution does not match then we skip
-                if (Mathf.Abs(ringAngle%360 - solution[j]%360) > bufferRadius)
+                if (Mathf.Abs((ringAngle%360) - (solution[j]%360)) > bufferRadius)
                 {
                     Debug.Log("solution " + i + "is false at " +j);
                     solved = false;
@@ -82,6 +83,7 @@ public class CirclePuzzleManager : MonoBehaviour
             {
                 return i;
             }
+            i++;
         }
 
         return -1;
