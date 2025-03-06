@@ -22,7 +22,7 @@ public class ShadowPuzzleController : MonoBehaviour
     public void SetLastSelected(GameObject SetLastSelected)
     {
         lastSelected = SetLastSelected;
-        //Debug.Log("new selected object: " + lastSelected);
+        Debug.Log("new selected object: " + lastSelected);
     }
 
     public float turnSpeed = 1;

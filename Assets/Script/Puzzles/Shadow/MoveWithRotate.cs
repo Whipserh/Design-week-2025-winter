@@ -50,7 +50,7 @@ public class MoveWithRotate : MonoBehaviour
     private void OnMouseDown()
     {
         moving = true;
-        gameObject.SendMessage("SetLastSelected", gameObject);
+        Controller.SendMessage("SetLastSelected", gameObject);
     }
     private void OnMouseUp()
     {
