@@ -44,6 +44,7 @@ public class Movement : MonoBehaviour
     //lets the player move the item
     private void OnMouseDown()
     {
+        lastPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         moving = true;
     }
     private void OnMouseUp()
