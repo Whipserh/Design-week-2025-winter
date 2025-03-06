@@ -12,8 +12,12 @@ public class starVisible : MonoBehaviour
     public List<GameObject> linePosPurple = new List<GameObject>();
     public List<bool> starActive = new List<bool>();
 
-    public GameObject redFilm;
-    public GameObject blueFilm;
+    public GameObject redFilm1;
+    public GameObject redFilm2;
+    public GameObject redFilm3;
+    public GameObject blueFilm1;
+    public GameObject blueFilm2;
+    public GameObject blueFilm3;
 
 
     // Start is called before the first frame update
@@ -51,7 +55,7 @@ public class starVisible : MonoBehaviour
         //check blue stars
         foreach (GameObject starPos in starPosRed)
         {
-            if (isInRange(starPos, redFilm))
+            if (isInRange(starPos, redFilm1) || isInRange(starPos, redFilm2) || isInRange(starPos, redFilm3))
             {
                 starPos.SetActive(true);
             }
@@ -71,7 +75,7 @@ public class starVisible : MonoBehaviour
         //check red stars
         foreach (GameObject starPos in starPosBlue)
         {
-            if (isInRange(starPos, blueFilm))
+            if (isInRange(starPos, blueFilm1) || isInRange(starPos, blueFilm2) || isInRange(starPos, blueFilm3))
             {
                 starPos.SetActive(true);
             }
@@ -91,60 +95,95 @@ public class starVisible : MonoBehaviour
         //check blue lines
         foreach (GameObject linePos in linePosRed)
         {
-            if (isInRange(linePos, redFilm))
+            if (isInRange(linePos, redFilm1) || isInRange(linePos, redFilm2) || isInRange(linePos, redFilm3))
             {
                 linePos.SetActive(true);
             }
             else
             {
-                if (linePos.activeInHierarchy == true)
+                linePos.SetActive(false);
+                /*if (linePos.activeInHierarchy == true)
                 {
                     linePos.SetActive(true);
                 }
                 else
                 {
                     linePos.SetActive(false);
-                }
+                }*/
             }
         }
 
         //check red lines
         foreach (GameObject linePos in linePosBlue)
         {
-            if (isInRange(linePos, blueFilm))
+            if (isInRange(linePos, blueFilm1) || isInRange(linePos, blueFilm2) || isInRange(linePos, blueFilm3))
             {
                 linePos.SetActive(true);
             }
             else
             {
-                if (linePos.activeInHierarchy == true)
+                linePos.SetActive(false);
+                /*if (linePos.activeInHierarchy == true)
                 {
                     linePos.SetActive(true);
                 }
                 else
                 {
                     linePos.SetActive(false);
-                }
+                }*/
             }
         }
 
         //check purple lines
         foreach (GameObject linePos in linePosPurple)
         {
-            if (isInRange(linePos, blueFilm) && isInRange(linePos, redFilm))
+            if (isInRange(linePos, blueFilm1) && isInRange(linePos, redFilm1))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm1) && isInRange(linePos, redFilm2))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm1) && isInRange(linePos, redFilm3))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm2) && isInRange(linePos, redFilm1))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm2) && isInRange(linePos, redFilm2))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm2) && isInRange(linePos, redFilm3))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm3) && isInRange(linePos, redFilm1))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm3) && isInRange(linePos, redFilm2))
+            {
+                linePos.SetActive(true);
+            }
+            else if (isInRange(linePos, blueFilm3) && isInRange(linePos, redFilm3))
             {
                 linePos.SetActive(true);
             }
             else
             {
-                if (linePos.activeInHierarchy == true)
+                linePos.SetActive(false);
+                /*if (linePos.activeInHierarchy == true)
                 {
                     linePos.SetActive(true);
                 }
                 else
                 {
                     linePos.SetActive(false);
-                }
+                }*/
             }
         }
     }
