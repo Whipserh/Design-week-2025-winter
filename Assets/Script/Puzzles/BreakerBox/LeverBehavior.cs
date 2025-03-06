@@ -9,7 +9,7 @@ public class LeverBehavior : MonoBehaviour
     
     private Camera mainCam;
 
-    private const float maximumHeightDist = 0.625f;
+    private const float maximumHeightDist = 1.22f;
 
     private Vector2 leverInitialPos;
     private Vector2 mouseInitialPos;
@@ -23,7 +23,7 @@ public class LeverBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (transform.localPosition.y > -maximumHeightDist / 10 * 9 && isON) return;
+        if (transform.localPosition.y > maximumHeightDist / 10 && isON) return;
         if (transform.localPosition.y < maximumHeightDist / 10 * 9 && !isON) return;
         foreach(Lights target in affectedLights)
         {
@@ -46,6 +46,6 @@ public class LeverBehavior : MonoBehaviour
         Vector2 distanceTravelled = mouseInitialPos - mousePos;
 
         //adds that distance travelled from the last frame to the game object
-        transform.localPosition = new Vector2(0, Mathf.Clamp(leverInitialPos.y - distanceTravelled.y, -maximumHeightDist, maximumHeightDist));
+        transform.localPosition = new Vector2(leverInitialPos.x, Mathf.Clamp(leverInitialPos.y - distanceTravelled.y, 0, maximumHeightDist));
     }
 }
