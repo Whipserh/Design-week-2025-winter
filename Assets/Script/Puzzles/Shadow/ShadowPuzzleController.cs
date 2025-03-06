@@ -2,36 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class ShadowPuzzleController : MonoBehaviour
 {
-    public GameObject lastSelected;
+    public List<Transform> constellationPieces;
 
-    public GameObject DracoHead;
-    public GameObject DracoNeck;
-    public GameObject DracoDip;
-    public GameObject DracoTail;
-    public GameObject DracoBody;
+    public List<Transform> constellationGoals;
 
-    public GameObject DracoHeadCheck;
-    public GameObject DracoNeckCheck;
-    public GameObject DracoDipCheck;
-    public GameObject DracoTailCheck;
-    public GameObject DracoBodyCheck;
+    public List<bool> constellationsInPlace;
+
+    public TextMeshProUGUI completeText;
+
+    private Transform lastSelected;
 
     public void SetLastSelected(GameObject SetLastSelected)
     {
-        lastSelected = SetLastSelected;
+        lastSelected = SetLastSelected.transform;
         Debug.Log("new selected object: " + lastSelected);
     }
 
     public float turnSpeed = 1;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -46,10 +37,22 @@ public class ShadowPuzzleController : MonoBehaviour
             }
         }
 
+        for (int i = 0; i < constellationPieces.Count; i++)
+        {
+            if (!CloseEnough(constellationPieces[i], constellationGoals[i]))
+            {
+                constellationsInPlace[i] = false;
+                return;
+            }
+            else constellationsInPlace[i] = true;
+        }
+
+        if (!completeText.IsActive()) completeText.enabled = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private bool CloseEnough(Transform target, Transform goal)
     {
-        
+        if (target.position.x < goal.position.x + 0.25f && target.position.x > goal.position.x - 0.25f && target.position.y < goal.position.y + 0.25f && target.position.y > goal.position.y - 0.25f && Quaternion.Angle(target.rotation, goal.rotation) < 5) return true;
+        return false;
     }
 }

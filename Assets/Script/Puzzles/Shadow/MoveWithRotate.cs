@@ -9,17 +9,14 @@ public class MoveWithRotate : MonoBehaviour
     [Description("This needs a 2d box collider to move the objects.")]
 
     public bool moving;
-    public Vector2 lastPosition;
 
     public ShadowPuzzleController Controller;
-    bool lastSelected;
 
 
     // Start is called before the first frame update
     void Start()
     {
         moving = false;
-        lastPosition = Vector2.zero;
     }
 
     // Update is called once per frame
@@ -30,16 +27,9 @@ public class MoveWithRotate : MonoBehaviour
 
         if (moving)
         {
-            //gets how far the mouse travelled between frames
-            Vector2 distanceTravelled = mouselocation - lastPosition;
-
-            //adds that distance travelled from the last frame to the game object
-            transform.position += (Vector3)distanceTravelled;
-
-
-
-        }//updates the last positson of the mouse
-        lastPosition = mouselocation;
+            //Place the item on the mouse
+            transform.position = mouselocation;
+        }
 
     }
 
