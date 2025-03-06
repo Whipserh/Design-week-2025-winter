@@ -55,7 +55,7 @@ public class DrawLine : MonoBehaviour
                 float point2Dist = (linePoint2 - (Vector2)coordinates.point2.position).magnitude;
                 print("Point 2 distance: " + point2Dist);
                 if (point1Dist < 1 && point2Dist < 1) coordinates.isComplete = true;
-                if ((linePoint1 - (Vector2)coordinates.point2.position).magnitude < 0.05f && (linePoint2 - (Vector2)coordinates.point1.position).magnitude < 0.05f) coordinates.isComplete = true;
+                if ((linePoint1 - (Vector2)coordinates.point2.position).magnitude < 0.2f && (linePoint2 - (Vector2)coordinates.point1.position).magnitude < 0.2f) coordinates.isComplete = true;
             }
             currentLine.GetComponent<LineBehavior>().enabled = false;
         }
