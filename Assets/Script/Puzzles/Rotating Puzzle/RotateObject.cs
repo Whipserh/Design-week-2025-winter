@@ -27,7 +27,7 @@ public class RotateObject : MonoBehaviour
         float currentAngle = Mathf.Atan2(direction.y, direction.x);
 
 
-        Debug.Log(Vector2.Distance(transform.position, mouselocation));
+        //Debug.Log(Vector2.Distance(transform.position, mouselocation));
         if (Input.GetMouseButton(0) && pointOnSection(mouselocation))//if the player is holding the left click button and is selecting the section
 
         {

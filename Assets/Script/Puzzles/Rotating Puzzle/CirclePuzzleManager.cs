@@ -14,6 +14,7 @@ public class CirclePuzzleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        solutions = new float[5][];
         solutions[0] = solution1;
         solutions[1] = solution2;
         solutions[2] = solution3;
@@ -40,7 +41,7 @@ public class CirclePuzzleManager : MonoBehaviour
         //set all the doors to false
         foreach(GameObject door in doors)
         {
-            door.active = false;
+            door.SetActive(false);
         }
 
         int k = checkValidSolution();
@@ -50,6 +51,8 @@ public class CirclePuzzleManager : MonoBehaviour
             doors[k].SetActive(true);//set the index to be true
         }
 
+
+
     }
 
     //returns -1 if no solution is found
@@ -58,17 +61,21 @@ public class CirclePuzzleManager : MonoBehaviour
         int i = 0;
         foreach (float[] solution in solutions)
         {
+            //Debug.Log(solution.ToString);
+
             bool solved = true;
             for(int j = 0; j < solution.Length; j++)
             {
+                
                 //in degrees
                 float ringAngle = Mathf.Atan2(rings[j].transform.right.y, rings[j].transform.forward.x) * Mathf.Rad2Deg;
 
                 //if part of the solution does not match then we skip
-                if (Mathf.Abs(ringAngle - solution[j]) > bufferRadius)
+                if (Mathf.Abs(ringAngle%360 - solution[j]%360) > bufferRadius)
                 {
+                    Debug.Log("solution " + i + "is false at " +j);
                     solved = false;
-                    break;
+                    break; ;
                 }
             }
             if (solved)
