@@ -76,7 +76,7 @@ public class CirclePuzzleManager : MonoBehaviour
                 {
                     Debug.Log("solution " + i + "is false at " +j);
                     solved = false;
-                    break; ;
+                    break;
                 }
             }
             if (solved)
