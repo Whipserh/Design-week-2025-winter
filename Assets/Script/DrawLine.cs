@@ -5,11 +5,16 @@ using UnityEngine;
 public class DrawLine : MonoBehaviour
 {
     public GameObject line;
-    public Camera mainCamera;
 
     public float lineThickness;
 
     private GameObject currentLine;
+    private Camera mainCamera;
+
+    void Start()
+    {
+        mainCamera = Camera.main;
+    }
 
     void Update()
     {
