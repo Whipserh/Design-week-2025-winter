@@ -12,6 +12,8 @@ public class MoveWithRotate : MonoBehaviour
 
     public ShadowPuzzleController Controller;
 
+    public Vector2 lastPosition;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +29,16 @@ public class MoveWithRotate : MonoBehaviour
 
         if (moving)
         {
-            //Place the item on the mouse
-            transform.position = mouselocation;
-        }
+            //gets how far the mouse travelled between frames
+            Vector2 distanceTravelled = mouselocation - lastPosition;
 
+            //adds that distance travelled from the last frame to the game object
+            transform.position += (Vector3)distanceTravelled;
+
+
+
+        }//updates the last positson of the mouse
+        lastPosition = mouselocation;
     }
 
 
@@ -39,6 +47,7 @@ public class MoveWithRotate : MonoBehaviour
     //lets the player move the item
     private void OnMouseDown()
     {
+        lastPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         moving = true;
         Controller.SendMessage("SetLastSelected", gameObject);
     }
