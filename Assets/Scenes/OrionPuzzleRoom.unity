@@ -1806,7 +1806,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1392161525
 Transform:
@@ -1846,6 +1846,7 @@ MonoBehaviour:
   - {fileID: 1273323607}
   - {fileID: 1953766457}
   - {fileID: 157398548}
+  flipablePieces: 00000100000100000000
   constellationGoals:
   - {fileID: 1125836503}
   - {fileID: 863049248}
@@ -1857,7 +1858,7 @@ MonoBehaviour:
   - {fileID: 1528578127}
   - {fileID: 112444409}
   - {fileID: 1945990048}
-  constellationsInPlace: 0000000000000000000000
+  constellationsInPlace: 00000000000000000000
   completeText: {fileID: 268895127}
   turnSpeed: 45
 --- !u!1 &1528578126

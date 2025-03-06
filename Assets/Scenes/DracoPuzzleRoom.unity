@@ -1027,6 +1027,7 @@ MonoBehaviour:
   - {fileID: 1563881616}
   - {fileID: 1629745562}
   - {fileID: 512249976}
+  flipablePieces: 0000000000
   constellationGoals:
   - {fileID: 140444964}
   - {fileID: 1348286281}

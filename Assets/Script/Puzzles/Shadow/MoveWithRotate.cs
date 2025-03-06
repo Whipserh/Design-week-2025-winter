@@ -49,7 +49,7 @@ public class MoveWithRotate : MonoBehaviour
     {
         lastPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         moving = true;
-        Controller.SendMessage("SetLastSelected", gameObject);
+        Controller.SetLastSelected(gameObject);
     }
     private void OnMouseUp()
     {
