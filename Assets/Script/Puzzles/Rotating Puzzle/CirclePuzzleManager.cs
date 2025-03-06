@@ -72,9 +72,18 @@ public class CirclePuzzleManager : MonoBehaviour
                 float ringAngle = Mathf.Atan2(rings[j].transform.right.y, rings[j].transform.right.x) * Mathf.Rad2Deg;
                 //Debug.Log(rings);
                 //if part of the solution does not match then we skip
-                if (Mathf.Abs((ringAngle%360) - (solution[j]%360)) > bufferRadius)
+
+
+                //check to see if the angles are too close to the 0/360 line
+                float upperAngle = Mathf.Min(ringAngle % 360, solution[j]%360);
+                float lowerAngle = Mathf.Max(ringAngle % 360, solution[j] % 360);
+                if(upperAngle < bufferRadius && lowerAngle < bufferRadius)
+                    if (upperAngle + 360 - lowerAngle <= bufferRadius) continue;//if we are near the middle then we account for that, if its near the middle and 
+                if (Mathf.Abs((ringAngle%360) - (solution[j]%360)) > bufferRadius)//else we are not too close to the origin
                 {
-                    Debug.Log("solution " + i + "is false at " +j);
+                    Debug.Log("ring "+i + " " + (ringAngle%360));
+                    Debug.Log("solution " + i + " " + solution[j]);
+                    //Debug.Log("solution " + i + "is false at " +j);
                     solved = false;
                     break;
                 }

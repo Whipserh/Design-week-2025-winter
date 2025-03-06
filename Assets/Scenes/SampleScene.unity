@@ -1855,21 +1855,21 @@ MonoBehaviour:
   solution1:
   - -2
   - 33
-  - -218
+  - 142
   solution2:
   - 45
   - -135
   - -171
   solution3:
-  - -577
+  - 143
   - 33
   - -143
   solution4:
-  - -547
+  - 173
   - 67
   - 319
   solution5:
-  - -721
+  - -1
   - -183
   - -143
 --- !u!1 &420712570
@@ -2440,13 +2440,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547088876}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.9996135, w: -0.027800212}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5519369, w: 0.83388585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1737712048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -183.186}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 67}
 --- !u!114 &547088878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5481,13 +5481,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693500729}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.9567534, w: -0.29090053}
+  m_LocalRotation: {x: 0, y: -0, z: 0.35836798, w: -0.93358046}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1737712048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 213.824}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 318}
 --- !u!114 &1693500731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5699,13 +5699,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746521546}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.032453854, w: 0.9994732}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9981348, w: 0.061048605}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1737712048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -723.72}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 173}
 --- !u!114 &1746521548
 MonoBehaviour:
   m_ObjectHideFlags: 0
