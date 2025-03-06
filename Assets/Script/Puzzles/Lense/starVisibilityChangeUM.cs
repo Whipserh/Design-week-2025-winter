@@ -273,7 +273,7 @@ public class starVisibilityChangeUM : MonoBehaviour
 
     private bool isInRange(GameObject checkingObject, GameObject movingObject)
     {
-        if (checkingObject.transform.position.x <= (movingObject.transform.position.x + (movingObject.transform.localScale.x / 2)) && checkingObject.transform.position.x >= (movingObject.transform.position.x - (movingObject.transform.localScale.x / 2)) && checkingObject.transform.position.y <= (movingObject.transform.position.y + (movingObject.transform.localScale.y / 2)) && checkingObject.transform.position.y >= (movingObject.transform.position.y - (movingObject.transform.localScale.y / 2))) return true;
+        if (checkingObject.transform.position.x <= (movingObject.transform.position.x + (movingObject.transform.localScale.x * 1.5)) && checkingObject.transform.position.x >= (movingObject.transform.position.x - (movingObject.transform.localScale.x * 1.5)) && checkingObject.transform.position.y <= (movingObject.transform.position.y + (movingObject.transform.localScale.y * 1.5)) && checkingObject.transform.position.y >= (movingObject.transform.position.y - (movingObject.transform.localScale.y * 1.5))) return true;
         return false;
     }
 
