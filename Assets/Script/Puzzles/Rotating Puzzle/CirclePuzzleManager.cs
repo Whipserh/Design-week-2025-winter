@@ -75,13 +75,14 @@ public class CirclePuzzleManager : MonoBehaviour
 
 
                 //check to see if the angles are too close to the 0/360 line
-                float upperAngle = Mathf.Min(ringAngle % 360, solution[j]%360);
-                float lowerAngle = Mathf.Max(ringAngle % 360, solution[j] % 360);
+                int upperAngle = Mathf.Min(mod((int)(int)ringAngle, 360), mod((int)solution[j], 360));
+                int lowerAngle = Mathf.Max(mod((int)ringAngle, 360), mod((int)solution[j], 360));
                 if(upperAngle < bufferRadius && lowerAngle < bufferRadius)
                     if (upperAngle + 360 - lowerAngle <= bufferRadius) continue;//if we are near the middle then we account for that, if its near the middle and 
-                if (Mathf.Abs((ringAngle%360) - (solution[j]%360)) > bufferRadius)//else we are not too close to the origin
+                if (Mathf.Abs(mod((int)ringAngle,360) - mod((int)solution[j],360)) > bufferRadius)//else we are not too close to the origin
                 {
-                    Debug.Log("ring "+i + " " + (ringAngle%360));
+                    Debug.Log((ringAngle % 360));
+                    Debug.Log("ring "+i + " " + (ringAngle % 360));
                     Debug.Log("solution " + i + " " + solution[j]);
                     //Debug.Log("solution " + i + "is false at " +j);
                     solved = false;
@@ -96,5 +97,15 @@ public class CirclePuzzleManager : MonoBehaviour
         }
 
         return -1;
+    }//end check
+
+
+    public int mod (int x, int modulous)
+    {
+        if(x%modulous<0)
+        return (x%modulous) + modulous;
+        return x%modulous;
     }
+
+
 }
