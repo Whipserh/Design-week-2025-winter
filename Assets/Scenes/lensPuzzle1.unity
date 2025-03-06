@@ -952,8 +952,8 @@ Transform:
   m_GameObject: {fileID: 427731283}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9641, y: 2.2991, z: 0}
-  m_LocalScale: {x: 3.83793, y: 3.070344, z: 0.6140688}
+  m_LocalPosition: {x: 6.19, y: 0.98, z: 0}
+  m_LocalScale: {x: 2.6255279, y: 4.4366474, z: 0.6140688}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -995,6 +995,26 @@ MonoBehaviour:
   - {fileID: 122379544}
   - {fileID: 253088146}
   starActive: 
+  constellationParts:
+  - {fileID: 369853727}
+  - {fileID: 814995284}
+  - {fileID: 80296830}
+  - {fileID: 1977583114}
+  - {fileID: 780597395}
+  - {fileID: 1754707029}
+  - {fileID: 1300732939}
+  - {fileID: 542079408}
+  - {fileID: 103288771}
+  - {fileID: 2069614075}
+  - {fileID: 1208703996}
+  - {fileID: 1552557310}
+  - {fileID: 2100330783}
+  - {fileID: 1602053915}
+  - {fileID: 1400092909}
+  - {fileID: 551823822}
+  - {fileID: 11133350}
+  - {fileID: 122379544}
+  - {fileID: 253088146}
   redFilm1: {fileID: 427731283}
   redFilm2: {fileID: 1097891624}
   redFilm3: {fileID: 1677976160}
@@ -1540,8 +1560,8 @@ Transform:
   m_GameObject: {fileID: 939123087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.3792, y: -1.6414, z: 0}
-  m_LocalScale: {x: 3.871595, y: 2.728495, z: 2.0322263}
+  m_LocalPosition: {x: -7.1, y: 1.25, z: 0}
+  m_LocalScale: {x: 3.5445185, y: 2.3435042, z: 2.0322263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1646,7 +1666,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1097891629}
   - component: {fileID: 1097891628}
-  - component: {fileID: 1097891627}
   - component: {fileID: 1097891626}
   - component: {fileID: 1097891625}
   m_Layer: 0
@@ -1715,49 +1734,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moving: 0
   lastPosition: {x: 0, y: 0}
---- !u!114 &1097891627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097891624}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b239d3771667b08448bdf0c465b6da28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starPosRed:
-  - {fileID: 369853727}
-  - {fileID: 814995284}
-  - {fileID: 80296830}
-  - {fileID: 1977583114}
-  - {fileID: 780597395}
-  starPosBlue:
-  - {fileID: 1754707029}
-  - {fileID: 1300732939}
-  - {fileID: 542079408}
-  - {fileID: 103288771}
-  linePosRed:
-  - {fileID: 2069614075}
-  - {fileID: 1208703996}
-  linePosBlue:
-  - {fileID: 1552557310}
-  - {fileID: 2100330783}
-  - {fileID: 1602053915}
-  linePosPurple:
-  - {fileID: 1400092909}
-  - {fileID: 551823822}
-  - {fileID: 11133350}
-  - {fileID: 122379544}
-  - {fileID: 253088146}
-  starActive: 
-  redFilm1: {fileID: 0}
-  redFilm2: {fileID: 0}
-  redFilm3: {fileID: 0}
-  blueFilm1: {fileID: 0}
-  blueFilm2: {fileID: 0}
-  blueFilm3: {fileID: 0}
 --- !u!212 &1097891628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1819,8 +1795,8 @@ Transform:
   m_GameObject: {fileID: 1097891624}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.1351, y: 4.8201, z: 0}
-  m_LocalScale: {x: 3.6449854, y: 2.9159882, z: 0.58319765}
+  m_LocalPosition: {x: -6.2, y: -0.39, z: 0}
+  m_LocalScale: {x: 2.7982554, y: 2.60806, z: 0.58319765}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2430,8 +2406,8 @@ Transform:
   m_GameObject: {fileID: 1563316422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.92, y: -3.23, z: 0}
-  m_LocalScale: {x: 4.198515, y: 2.958891, z: 2.203829}
+  m_LocalPosition: {x: 6.82, y: -0.91, z: 0}
+  m_LocalScale: {x: 4.198515, y: 2.0929294, z: 2.203829}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2686,7 +2662,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1677976165}
   - component: {fileID: 1677976164}
-  - component: {fileID: 1677976163}
   - component: {fileID: 1677976162}
   - component: {fileID: 1677976161}
   m_Layer: 0
@@ -2755,49 +2730,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moving: 0
   lastPosition: {x: 0, y: 0}
---- !u!114 &1677976163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677976160}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b239d3771667b08448bdf0c465b6da28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starPosRed:
-  - {fileID: 369853727}
-  - {fileID: 814995284}
-  - {fileID: 80296830}
-  - {fileID: 1977583114}
-  - {fileID: 780597395}
-  starPosBlue:
-  - {fileID: 1754707029}
-  - {fileID: 1300732939}
-  - {fileID: 542079408}
-  - {fileID: 103288771}
-  linePosRed:
-  - {fileID: 2069614075}
-  - {fileID: 1208703996}
-  linePosBlue:
-  - {fileID: 1552557310}
-  - {fileID: 2100330783}
-  - {fileID: 1602053915}
-  linePosPurple:
-  - {fileID: 1400092909}
-  - {fileID: 551823822}
-  - {fileID: 11133350}
-  - {fileID: 122379544}
-  - {fileID: 253088146}
-  starActive: 
-  redFilm1: {fileID: 0}
-  redFilm2: {fileID: 0}
-  redFilm3: {fileID: 0}
-  blueFilm1: {fileID: 0}
-  blueFilm2: {fileID: 0}
-  blueFilm3: {fileID: 0}
 --- !u!212 &1677976164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2859,7 +2791,7 @@ Transform:
   m_GameObject: {fileID: 1677976160}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3361, y: 4.5329, z: 0}
+  m_LocalPosition: {x: -6.15, y: 2.82, z: 0}
   m_LocalScale: {x: 3.827166, y: 3.0617328, z: 0.61234653}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3243,8 +3175,8 @@ Transform:
   m_GameObject: {fileID: 1950149678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.1801, y: 0.9123, z: 0}
-  m_LocalScale: {x: 3.9174292, y: 2.7607965, z: 2.0562851}
+  m_LocalPosition: {x: 4.99, y: 1.67, z: 0}
+  m_LocalScale: {x: 2.3008237, y: 5.185604, z: 2.0562851}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
