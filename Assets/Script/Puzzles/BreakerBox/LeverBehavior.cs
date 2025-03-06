@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class LeverBehavior : MonoBehaviour
 {
+    public List<Lights> affectedLights;
+    
     private Camera mainCam;
 
     private const float maximumHeightDist = 0.625f;
@@ -12,9 +14,22 @@ public class LeverBehavior : MonoBehaviour
     private Vector2 leverInitialPos;
     private Vector2 mouseInitialPos;
 
+    private bool isON = false;
+
     private void Start()
     {
         mainCam = Camera.main;
+    }
+
+    private void Update()
+    {
+        if (transform.localPosition.y > -maximumHeightDist / 10 * 9 && isON) return;
+        if (transform.localPosition.y < maximumHeightDist / 10 * 9 && !isON) return;
+        foreach(Lights target in affectedLights)
+        {
+            target.SwapLights();
+        }
+        isON = !isON;
     }
 
     private void OnMouseDown()
