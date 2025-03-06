@@ -11,6 +11,9 @@ public class MoveWithRotate : MonoBehaviour
     public bool moving;
     public Vector2 lastPosition;
 
+    public ShadowPuzzleController Controller;
+    bool lastSelected;
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +40,7 @@ public class MoveWithRotate : MonoBehaviour
 
         }//updates the last positson of the mouse
         lastPosition = mouselocation;
+
     }
 
 
@@ -46,6 +50,7 @@ public class MoveWithRotate : MonoBehaviour
     private void OnMouseDown()
     {
         moving = true;
+        Controller.SendMessage("SetLastSelected", gameObject);
     }
     private void OnMouseUp()
     {
