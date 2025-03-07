@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c1e9f2182912a43a55caecbc3ac448, type: 3}
   m_Name: Computer0
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "\u2026what?"
+  - They were doing what to the stars?
+  - "I can\u2019t believe this\u2026why would they try to harvest the stars?"
+  - "I understand now\u2026why they fell."
+  - "They were pulled away from their mother bear, prey to the scientists\u2019 glimmering
+    hope of power."
+  - "And now they\u2019re stuck here\u2026all alone."
+  - "Maybe\u2026I can push them back up? I think\u2026maybe\u2026I\u2019ll just need
+    to connect the little bear back together."

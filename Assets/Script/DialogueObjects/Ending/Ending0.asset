@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c1e9f2182912a43a55caecbc3ac448, type: 3}
   m_Name: Ending0
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - Stars belong in the sky, unreachable but ever-present.
+  - And the stories they hold with them are eternal stories of us.
+  - So I hope, Little Dipper, that you would remember me by taking this piece of
+    me home.
+  - And tell my story to the ones who gaze on the North Star for guidance to the
+    place they belong.
