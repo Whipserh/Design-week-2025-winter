@@ -46,7 +46,7 @@ public class CirclePuzzleManager : MonoBehaviour
 
         int k = checkValidSolution();
         //did we find a solution?
-        Debug.Log(k);
+        //Debug.Log(k);
         if (k!=-1)//yes
         {
             doors[k].SetActive(true);//set the index to be true
@@ -81,9 +81,9 @@ public class CirclePuzzleManager : MonoBehaviour
                     if (upperAngle + 360 - lowerAngle <= bufferRadius) continue;//if we are near the middle then we account for that, if its near the middle and 
                 if (Mathf.Abs(mod((int)ringAngle,360) - mod((int)solution[j],360)) > bufferRadius)//else we are not too close to the origin
                 {
-                    Debug.Log((ringAngle % 360));
-                    Debug.Log("ring "+i + " " + (ringAngle % 360));
-                    Debug.Log("solution " + i + " " + solution[j]);
+                    //Debug.Log((ringAngle % 360));
+                    //Debug.Log("ring "+i + " " + (ringAngle % 360));
+                    //Debug.Log("solution " + i + " " + solution[j]);
                     //Debug.Log("solution " + i + "is false at " +j);
                     solved = false;
                     break;
