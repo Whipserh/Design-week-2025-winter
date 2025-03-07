@@ -8,6 +8,9 @@ public class LockedDoor : MonoBehaviour
     public GameObject room, camera, highlight;
     public DialogueSequence nextDialogue;
 
+    [HideInInspector]
+    public int locks;
+    private int keys;
     private bool isLocked = true;
 
     private DialogueManager dm;
@@ -43,6 +46,7 @@ public class LockedDoor : MonoBehaviour
 
     public void Unlock()
     {
-        isLocked = false;
+        keys++;
+        if(keys == locks) isLocked = false;
     }
 }

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
-    public GameObject doorToUnlock;
+    public LockedDoor doorToUnlock;
     
     private int numOfLights;
     private int greenLights;
+
+    private void Start()
+    {
+        doorToUnlock.locks++;
+    }
 
     public void Add()
     {
@@ -19,6 +24,6 @@ public class LightManager : MonoBehaviour
         if (isRed) greenLights--;
         else greenLights++;
 
-        if (greenLights == numOfLights) doorToUnlock.GetComponent<LockedDoor>().Unlock();
+        if (greenLights == numOfLights) doorToUnlock.Unlock();
     }
 }

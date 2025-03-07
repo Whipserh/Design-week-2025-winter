@@ -26,6 +26,8 @@ public class starVisibilityChangeUM : MonoBehaviour
 
     bool gameFinished = false;
 
+    public LockedDoor doorToUnlock;
+
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +56,8 @@ public class starVisibilityChangeUM : MonoBehaviour
         {
             linePos.SetActive(false);
         }
+
+        doorToUnlock.locks++;
     }
 
 
@@ -252,6 +256,7 @@ public class starVisibilityChangeUM : MonoBehaviour
                     break;
                 }
                 gameFinished = true;
+                doorToUnlock.Unlock();
             }
         }
 
