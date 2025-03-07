@@ -1638,7 +1638,7 @@ Transform:
   m_GameObject: {fileID: 241300772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 204.7, y: 11.1, z: 0}
+  m_LocalPosition: {x: 189.2, y: 16.4, z: 0}
   m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1912,9 +1912,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1163402243}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1438756014054662255, guid: e0fd571586a8d794fbc562443940a763, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 458271273}
     - targetCorrespondingSourceObject: {fileID: 1438756014054662255, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       insertIndex: -1
       addedObject: {fileID: 458271275}
@@ -2332,22 +2329,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 256100994621531769, guid: e0fd571586a8d794fbc562443940a763, type: 3}
   m_PrefabInstance: {fileID: 391512310}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &458271273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391512311}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54396aaa69e8c3846b0bdd169bd28c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 1128819495}
-  camera: {fileID: 519420028}
-  highlight: {fileID: 1163402242}
-  nextDialogue: {fileID: 0}
 --- !u!114 &458271275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3457,7 +3438,7 @@ Transform:
   m_GameObject: {fileID: 691788278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 5.69, z: 0}
+  m_LocalPosition: {x: -1.2544999, y: 2.546, z: 0}
   m_LocalScale: {x: 0.04072635, y: 0.064645, z: 0.64645}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3593,7 +3574,7 @@ Transform:
   m_GameObject: {fileID: 697766224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130.2, y: -20.7, z: 0}
+  m_LocalPosition: {x: 162.98001, y: 26.68, z: 0}
   m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4556,7 +4537,7 @@ PrefabInstance:
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 241300772}
+      objectReference: {fileID: 1107394198}
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: camera
       value: 
@@ -4898,7 +4879,7 @@ Transform:
   m_GameObject: {fileID: 1107394198}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130.4, y: 15.5, z: 0}
+  m_LocalPosition: {x: 137.48, y: 18.16, z: 0}
   m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5131,7 +5112,7 @@ PrefabInstance:
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 697766224}
+      objectReference: {fileID: 1772452805}
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: camera
       value: 
@@ -5572,7 +5553,7 @@ Transform:
   m_GameObject: {fileID: 1260529156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 125.04, y: -23.22, z: 0}
+  m_LocalPosition: {x: 157.82, y: 24.16, z: 0}
   m_LocalScale: {x: 0.469343, y: 0.469343, z: 0.469343}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5827,15 +5808,19 @@ PrefabInstance:
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 1772452805}
+      objectReference: {fileID: 697766224}
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420028}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1438756014054662255, guid: e0fd571586a8d794fbc562443940a763, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1449292986}
   m_SourcePrefab: {fileID: 100100000, guid: e0fd571586a8d794fbc562443940a763, type: 3}
 --- !u!1 &1383531260
 GameObject:
@@ -6150,7 +6135,7 @@ Transform:
   m_GameObject: {fileID: 1401808934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 165.7, y: 32.9, z: 0}
+  m_LocalPosition: {x: 137.81, y: 1.46, z: 0}
   m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6241,6 +6226,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1449292982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1438756014054662255, guid: e0fd571586a8d794fbc562443940a763, type: 3}
+  m_PrefabInstance: {fileID: 1362592219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1449292986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449292982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7e300613e92494fa922b84a4ab9f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 697766224}
+  camera: {fileID: 519420028}
+  highlight: {fileID: 0}
+  nextDialogue: {fileID: 0}
 --- !u!1001 &1483559456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6312,7 +6318,7 @@ PrefabInstance:
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 697766224}
+      objectReference: {fileID: 1401808934}
     - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
       propertyPath: camera
       value: 
@@ -7692,7 +7698,7 @@ Transform:
   m_GameObject: {fileID: 1772452805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 206.5, y: -17.7, z: 0}
+  m_LocalPosition: {x: 190.41, y: 2, z: 0}
   m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -24,7 +24,7 @@ public class LockedDoor : MonoBehaviour
 
     public void ToggleHighlight()
     {
-        highlight.SetActive(!highlight.activeInHierarchy);
+        if(highlight != null) highlight.SetActive(!highlight.activeInHierarchy);
     }
 
     private void OnMouseExit()
