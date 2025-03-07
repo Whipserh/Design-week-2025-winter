@@ -11,9 +11,13 @@ public class Lights : MonoBehaviour
 
     private SpriteRenderer sr;
 
+    private LightManager lm;
+
     private void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
+        lm = GameObject.Find("Lights").GetComponent<LightManager>();
+        lm.Add();
     }
 
     public void SwapLights()
@@ -21,5 +25,6 @@ public class Lights : MonoBehaviour
         if (isRed) sr.color = green;
         else sr.color = red;
         isRed = !isRed;
+        lm.CompleteCheck(isRed);
     }
 }

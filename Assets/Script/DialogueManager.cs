@@ -67,4 +67,10 @@ public class DialogueManager : MonoBehaviour
         currentDialogue = DialogueSquence;
         StartCoroutine(scrollingDialogue());
     }
+
+    [ContextMenu("Instant Speed Text")]
+    private void InstantSpeedText()
+    {
+        delay = 0;
+    }
 }
