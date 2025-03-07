@@ -45,7 +45,7 @@ public class LockedDoor : MonoBehaviour
         
     }
     
-
+    [ContextMenu("Get Key")]
     public void Unlock()
     {
         keys++;
