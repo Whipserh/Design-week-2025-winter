@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65c1e9f2182912a43a55caecbc3ac448, type: 3}
-  m_Name: Intro4
+  m_Name: Intro4+5
   m_EditorClassIdentifier: 
   dialogue:
   - But I found no one there.
   - Well...
   - "At least not a person\u2026"
+  - "The star didn\u2019t speak, but I knew what it was asking."
+  - Its family is in there. It needed my help.
+  - They want to go back to the sky.

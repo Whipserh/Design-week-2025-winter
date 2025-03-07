@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
+      propertyPath: nextDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d2731d59629fe0f4cb33d9fc2f7e556e, type: 2}
     m_RemovedComponents:
     - {fileID: 4842151751231863629, guid: e0fd571586a8d794fbc562443940a763, type: 3}
     m_RemovedGameObjects: []
@@ -546,7 +550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &79930961
 Transform:
   m_ObjectHideFlags: 0
@@ -556,7 +560,7 @@ Transform:
   m_GameObject: {fileID: 79930960}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.87, z: 0}
+  m_LocalPosition: {x: 0, y: -2.87, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1443,6 +1447,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
+      propertyPath: nextDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 4783b6d282455fc48a939b7aee2e5179, type: 2}
     m_RemovedComponents:
     - {fileID: 4842151751231863629, guid: e0fd571586a8d794fbc562443940a763, type: 3}
     m_RemovedGameObjects: []
@@ -2238,6 +2246,7 @@ MonoBehaviour:
   room: {fileID: 1128819495}
   camera: {fileID: 519420028}
   highlight: {fileID: 1163402242}
+  nextDialogue: {fileID: 0}
 --- !u!1 &460369220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,6 +2844,7 @@ MonoBehaviour:
   room: {fileID: 1497006091}
   camera: {fileID: 519420028}
   highlight: {fileID: 1731648810}
+  nextDialogue: {fileID: 11400000, guid: 453418bbce40e8b47bfb2799c1c22b41, type: 2}
 --- !u!212 &594464544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5408,7 +5418,7 @@ Transform:
   m_GameObject: {fileID: 1383531260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.436, y: -0.0458, z: 0}
+  m_LocalPosition: {x: -7.44, y: -0.0458, z: 0}
   m_LocalScale: {x: 0.1270652, y: 2.9108512, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5454,7 +5464,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -6276,6 +6286,7 @@ MonoBehaviour:
   room: {fileID: 1023500040}
   camera: {fileID: 519420028}
   highlight: {fileID: 1304572388}
+  nextDialogue: {fileID: 0}
 --- !u!61 &1728103316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7375,9 +7386,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 79930960}
-  testDialogue: {fileID: 11400000, guid: 24f915ffe8eff5e41ad96338b81cd092, type: 2}
+  firstDialogue: {fileID: 11400000, guid: 500ed75136e211d449bb34751268cbfd, type: 2}
   currentDialogue: {fileID: 0}
-  delay: 0.05
+  delay: 0.025
+  isDialogueRunning: 0
 --- !u!4 &2007728521
 Transform:
   m_ObjectHideFlags: 0
@@ -7667,6 +7679,7 @@ MonoBehaviour:
   room: {fileID: 24206296}
   camera: {fileID: 519420028}
   highlight: {fileID: 460369220}
+  nextDialogue: {fileID: 0}
 --- !u!61 &2080190897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8019,6 +8032,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 7555392739894019183, guid: e0fd571586a8d794fbc562443940a763, type: 3}
+      propertyPath: nextDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 25f4274eb041bc344b70c2ce8b7597f5, type: 2}
     m_RemovedComponents:
     - {fileID: 4842151751231863629, guid: e0fd571586a8d794fbc562443940a763, type: 3}
     m_RemovedGameObjects: []
