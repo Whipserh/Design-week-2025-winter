@@ -6,12 +6,15 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject textBox;
-    public DialogueSequence testDialogue;
+    public DialogueSequence firstDialogue;
     public DialogueSequence currentDialogue;
 
     private TextMeshProUGUI textComponent;
 
     public float delay;
+
+    [HideInInspector]
+    public bool isDialogueRunning = false;
 
     private bool waiting = false;
     private int lineNumber;
@@ -19,11 +22,12 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         textComponent = textBox.GetComponentInChildren<TextMeshProUGUI>();
+        StartDialogue(firstDialogue);
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && waiting)
+        if(Input.GetMouseButtonUp(0) && waiting)
         {
             waiting = false;
             if (lineNumber + 1 < currentDialogue.dialogue.Length) lineNumber++;
@@ -31,6 +35,7 @@ public class DialogueManager : MonoBehaviour
             {
                 lineNumber = 0;
                 textBox.SetActive(false);
+                isDialogueRunning = false;
                 return;
             }
             StartCoroutine(scrollingDialogue());
@@ -56,16 +61,16 @@ public class DialogueManager : MonoBehaviour
         StopCoroutine(scrollingDialogue());
     }
 
-    [ContextMenu ("test dialogue")]
-    private void forceDialogue()
+    public void StartDialogue(DialogueSequence DialogueSquence)
     {
-        currentDialogue = testDialogue;
+        isDialogueRunning = true;
+        currentDialogue = DialogueSquence;
         StartCoroutine(scrollingDialogue());
     }
 
-    public void startDialogue(DialogueSequence DialogueSquence)
+    [ContextMenu("Instant Speed Text")]
+    private void InstantSpeedText()
     {
-        currentDialogue = DialogueSquence;
-        StartCoroutine(scrollingDialogue());
+        delay = 0;
     }
 }
