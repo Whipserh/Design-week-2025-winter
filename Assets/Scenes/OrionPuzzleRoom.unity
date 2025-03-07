@@ -1860,6 +1860,8 @@ MonoBehaviour:
   - {fileID: 1945990048}
   constellationsInPlace: 00000000000000000000
   completeText: {fileID: 268895127}
+  graceRangeSpacing: 20
+  graceRangeRotation: 20
   turnSpeed: 45
 --- !u!1 &1528578126
 GameObject:
@@ -2210,7 +2212,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02, y: -0.29, z: 0}
-  m_LocalScale: {x: 8.778485, y: 8.778485, z: 8.778485}
+  m_LocalScale: {x: 5.866461, y: 8.901516, z: 8.778485}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

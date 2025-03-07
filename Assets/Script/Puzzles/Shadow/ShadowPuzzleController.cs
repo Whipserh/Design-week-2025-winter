@@ -16,6 +16,9 @@ public class ShadowPuzzleController : MonoBehaviour
 
     public TextMeshProUGUI completeText;
 
+    public float graceRangeSpacing;
+    public int graceRangeRotation;
+
     private Transform lastSelected;
 
     public void SetLastSelected(GameObject SetLastSelected)
@@ -54,8 +57,8 @@ public class ShadowPuzzleController : MonoBehaviour
 
     private bool CloseEnough(Transform target, Transform goal, bool isFlipable)
     {
-        if (isFlipable && target.position.x < goal.position.x + 0.25f && target.position.x > goal.position.x - 0.25f && target.position.y < goal.position.y + 0.25f && target.position.y > goal.position.y - 0.25f && (Quaternion.Angle(target.rotation, goal.rotation) < 8 || Quaternion.Angle(target.rotation, goal.rotation) > 172)) return true;
-        if (!isFlipable && target.position.x < goal.position.x + 0.25f && target.position.x > goal.position.x - 0.25f && target.position.y < goal.position.y + 0.25f && target.position.y > goal.position.y - 0.25f && Quaternion.Angle(target.rotation, goal.rotation) < 8) return true;
+        if (isFlipable && target.position.x < goal.position.x + graceRangeSpacing && target.position.x > goal.position.x - graceRangeSpacing && target.position.y < goal.position.y + graceRangeSpacing && target.position.y > goal.position.y - graceRangeSpacing && (Quaternion.Angle(target.rotation, goal.rotation) < graceRangeRotation || Quaternion.Angle(target.rotation, goal.rotation) > 180 - graceRangeRotation)) return true;
+        if (!isFlipable && target.position.x < goal.position.x + graceRangeSpacing && target.position.x > goal.position.x - graceRangeSpacing && target.position.y < goal.position.y + graceRangeSpacing && target.position.y > goal.position.y - graceRangeSpacing && Quaternion.Angle(target.rotation, goal.rotation) < graceRangeRotation) return true;
         return false;
     }
 }
