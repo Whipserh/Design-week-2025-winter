@@ -16,10 +16,17 @@ public class ShadowPuzzleController : MonoBehaviour
 
     public TextMeshProUGUI completeText;
 
+    public LockedDoor doorToUnlock;
+
     public float graceRangeSpacing;
     public int graceRangeRotation;
 
     private Transform lastSelected;
+
+    private void Start()
+    {
+        doorToUnlock.locks++;
+    }
 
     public void SetLastSelected(GameObject SetLastSelected)
     {
@@ -53,6 +60,7 @@ public class ShadowPuzzleController : MonoBehaviour
         }
 
         if (!completeText.IsActive()) completeText.enabled = true;
+        doorToUnlock.Unlock();
     }
 
     private bool CloseEnough(Transform target, Transform goal, bool isFlipable)
