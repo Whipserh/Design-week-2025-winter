@@ -42,7 +42,9 @@ public class LockedDoor : MonoBehaviour
         if (isLocked) return;
         if (nextDialogue != null)  dm.StartDialogue(nextDialogue);
         camera.transform.position = new Vector3(room.transform.position.x, room.transform.position.y, camera.transform.position.z);
+        
     }
+    
 
     public void Unlock()
     {
