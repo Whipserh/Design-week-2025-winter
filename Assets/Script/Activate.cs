@@ -8,6 +8,6 @@ public class Activate : MonoBehaviour
 
         private void OnMouseUp()
     {
-        target.active = true;
+        target.SetActive(true);
     }
 }

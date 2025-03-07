@@ -14,6 +14,6 @@ public class Key : MonoBehaviour
     private void OnMouseUp()
     {
         doorToUnlock.Unlock();
-        doorToUnlock.gameObject.active = false;
+        doorToUnlock.gameObject.SetActive(true);
     }
 }
