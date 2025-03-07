@@ -59,8 +59,11 @@ public class ShadowPuzzleController : MonoBehaviour
             else constellationsInPlace[i] = true;
         }
 
-        if (!completeText.IsActive()) completeText.enabled = true;
-        doorToUnlock.Unlock();
+        if (!completeText.IsActive())
+        {
+            completeText.enabled = true;
+            doorToUnlock.Unlock();
+        }
     }
 
     private bool CloseEnough(Transform target, Transform goal, bool isFlipable)

@@ -253,11 +253,12 @@ public class starVisibilityChangeUM : MonoBehaviour
                 if (part.activeInHierarchy == false)
                 {
                     gameFinished = false;
-                    break;
+                    return;
                 }
-                gameFinished = true;
-                doorToUnlock.Unlock();
             }
+            
+            gameFinished = true;
+            doorToUnlock.Unlock();
         }
 
         else

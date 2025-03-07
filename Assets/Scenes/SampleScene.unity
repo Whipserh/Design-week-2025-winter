@@ -6225,13 +6225,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547088876}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.5519369, w: 0.83388585}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99596316, w: 0.08976351}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1737712048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 67}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -169.7}
 --- !u!114 &547088878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19397,9 +19397,9 @@ MonoBehaviour:
   constellationsInPlace: 0000000000
   completeText: {fileID: 789238081}
   doorToUnlock: {fileID: 1449292986}
-  graceRangeSpacing: 0
-  graceRangeRotation: 0
-  turnSpeed: 45
+  graceRangeSpacing: 20
+  graceRangeRotation: 20
+  turnSpeed: 90
 --- !u!4 &1691144032
 Transform:
   m_ObjectHideFlags: 0
@@ -19441,13 +19441,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693500729}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: 0.35836798, w: -0.93358046}
+  m_LocalRotation: {x: -0, y: 0, z: -0.6534207, w: -0.756995}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1737712048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 318}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 441.6}
 --- !u!114 &1693500731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20165,13 +20165,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746521546}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.9981348, w: 0.061048605}
+  m_LocalRotation: {x: 0, y: -0, z: 0.5088912, w: -0.8608309}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1737712048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 173}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 298.82}
 --- !u!114 &1746521548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22008,7 +22008,7 @@ MonoBehaviour:
   doorToUnlock: {fileID: 1449292986}
   graceRangeSpacing: 20
   graceRangeRotation: 20
-  turnSpeed: 45
+  turnSpeed: 90
 --- !u!4 &1937860939
 Transform:
   m_ObjectHideFlags: 0
