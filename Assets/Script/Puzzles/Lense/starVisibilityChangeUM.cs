@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class starVisible : MonoBehaviour
+public class starVisibilityChangeUM : MonoBehaviour
 {
     public List<GameObject> starPosRed = new List<GameObject>();
     public List<GameObject> starPosBlue = new List<GameObject>();
@@ -16,9 +16,13 @@ public class starVisible : MonoBehaviour
     public GameObject redFilm1;
     public GameObject redFilm2;
     public GameObject redFilm3;
+    public GameObject redFilm4;
+    public GameObject redFilm5;
     public GameObject blueFilm1;
     public GameObject blueFilm2;
     public GameObject blueFilm3;
+    public GameObject blueFilm4;
+    public GameObject blueFilm5;
 
     bool gameFinished = false;
 
@@ -56,12 +60,12 @@ public class starVisible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameFinished == false)
+        if (gameFinished == false)
         {
             //check blue stars
             foreach (GameObject starPos in starPosRed)
             {
-                if (isInRange(starPos, redFilm1) || isInRange(starPos, redFilm2) || isInRange(starPos, redFilm3))
+                if (isInRange(starPos, redFilm1) || isInRange(starPos, redFilm2) || isInRange(starPos, redFilm3) || isInRange(starPos, redFilm4) || isInRange(starPos, redFilm5))
                 {
                     starPos.SetActive(true);
                 }
@@ -82,7 +86,7 @@ public class starVisible : MonoBehaviour
             //check red stars
             foreach (GameObject starPos in starPosBlue)
             {
-                if (isInRange(starPos, blueFilm1) || isInRange(starPos, blueFilm2) || isInRange(starPos, blueFilm3))
+                if (isInRange(starPos, blueFilm1) || isInRange(starPos, blueFilm2) || isInRange(starPos, blueFilm3) || isInRange(starPos, blueFilm4) || isInRange(starPos, blueFilm5))
                 {
                     starPos.SetActive(true);
                 }
@@ -102,7 +106,7 @@ public class starVisible : MonoBehaviour
             //check blue lines
             foreach (GameObject linePos in linePosRed)
             {
-                if (isInRange(linePos, redFilm1) || isInRange(linePos, redFilm2) || isInRange(linePos, redFilm3))
+                if (isInRange(linePos, redFilm1) || isInRange(linePos, redFilm2) || isInRange(linePos, redFilm3) || isInRange(linePos, redFilm4) || isInRange(linePos, redFilm5))
                 {
                     linePos.SetActive(true);
                 }
@@ -115,7 +119,7 @@ public class starVisible : MonoBehaviour
             //check red lines
             foreach (GameObject linePos in linePosBlue)
             {
-                if (isInRange(linePos, blueFilm1) || isInRange(linePos, blueFilm2) || isInRange(linePos, blueFilm3))
+                if (isInRange(linePos, blueFilm1) || isInRange(linePos, blueFilm2) || isInRange(linePos, blueFilm3) || isInRange(linePos, blueFilm4) || isInRange(linePos, blueFilm5))
                 {
                     linePos.SetActive(true);
                 }
@@ -140,6 +144,15 @@ public class starVisible : MonoBehaviour
                 {
                     linePos.SetActive(true);
                 }
+                else if (isInRange(linePos, blueFilm1) && isInRange(linePos, redFilm4))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm1) && isInRange(linePos, redFilm5))
+                {
+                    linePos.SetActive(true);
+                }
+
                 else if (isInRange(linePos, blueFilm2) && isInRange(linePos, redFilm1))
                 {
                     linePos.SetActive(true);
@@ -152,6 +165,15 @@ public class starVisible : MonoBehaviour
                 {
                     linePos.SetActive(true);
                 }
+                else if (isInRange(linePos, blueFilm2) && isInRange(linePos, redFilm4))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm2) && isInRange(linePos, redFilm5))
+                {
+                    linePos.SetActive(true);
+                }
+
                 else if (isInRange(linePos, blueFilm3) && isInRange(linePos, redFilm1))
                 {
                     linePos.SetActive(true);
@@ -164,6 +186,58 @@ public class starVisible : MonoBehaviour
                 {
                     linePos.SetActive(true);
                 }
+                else if (isInRange(linePos, blueFilm3) && isInRange(linePos, redFilm4))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm3) && isInRange(linePos, redFilm5))
+                {
+                    linePos.SetActive(true);
+                }
+
+                else if (isInRange(linePos, blueFilm4) && isInRange(linePos, redFilm1))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm4) && isInRange(linePos, redFilm2))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm4) && isInRange(linePos, redFilm3))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm4) && isInRange(linePos, redFilm4))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm4) && isInRange(linePos, redFilm5))
+                {
+                    linePos.SetActive(true);
+                }
+
+                else if (isInRange(linePos, blueFilm5) && isInRange(linePos, redFilm1))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm5) && isInRange(linePos, redFilm2))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm5) && isInRange(linePos, redFilm3))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm5) && isInRange(linePos, redFilm4))
+                {
+                    linePos.SetActive(true);
+                }
+                else if (isInRange(linePos, blueFilm5) && isInRange(linePos, redFilm5))
+                {
+                    linePos.SetActive(true);
+                }
+
+
                 else
                 {
                     linePos.SetActive(false);
@@ -186,11 +260,15 @@ public class starVisible : MonoBehaviour
             redFilm1.GetComponent<Movement>().enabled = false;
             redFilm2.GetComponent<Movement>().enabled = false;
             redFilm3.GetComponent<Movement>().enabled = false;
+            redFilm4.GetComponent<Movement>().enabled = false;
+            redFilm5.GetComponent<Movement>().enabled = false;
             blueFilm1.GetComponent<Movement>().enabled = false;
             blueFilm2.GetComponent<Movement>().enabled = false;
             blueFilm3.GetComponent<Movement>().enabled = false;
+            blueFilm4.GetComponent <Movement>().enabled = false;
+            blueFilm5.GetComponent<Movement>().enabled = false;
         }
-        
+
     }
 
     private bool isInRange(GameObject checkingObject, GameObject movingObject)
@@ -199,5 +277,5 @@ public class starVisible : MonoBehaviour
         return false;
     }
 
-    
+
 }
